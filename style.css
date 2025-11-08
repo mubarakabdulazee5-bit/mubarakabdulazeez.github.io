@@ -1,0 +1,205 @@
+/* ===== General Styles ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===== Header / Navbar ===== */
+header {
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* ===== Section Styles ===== */
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #14213d;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* ===== Hero Section ===== */
+#home {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#home h2 {
+  font-size: 2rem;
+  color: #0d1b2a;
+}
+
+#home p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+  color: #333;
+}
+
+/* ===== Projects Section ===== */
+#projects {
+  background-color: #e5e5e5;
+  padding: 2.5rem 1rem;
+  border-radius: 8px;
+}
+
+.project {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  color: #0d1b2a;
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  display: inline-block;
+  color: white;
+  background-color: #14213d;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #ffcc00;
+  color: #0d1b2a;
+}
+
+/* ===== About Section ===== */
+#about {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ===== Contact Section ===== */
+#contact a {
+  color: #14213d;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+}
+/* ===== Fade-in Animation for Sections ===== */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===== Dark Mode Toggle Button ===== */
+#modeToggle {
+  background-color: #ffcc00;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#modeToggle:hover {
+  background-color: #ffd84d;
+}
+
+/* ===== Dark Mode Styles ===== */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark header {
+  background-color: #1c1c1c;
+}
+
+body.dark nav a {
+  color: #f0f0f0;
+}
+
+body.dark #projects {
+  background-color: #1e1e1e;
+}
+
+body.dark .project {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark footer {
+  background-color: #1c1c1c;
+}
+
+body.dark #modeToggle {
+  background-color: #333;
+  color: #ffcc00;
+}
