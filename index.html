@@ -3,85 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mubarak Abdulazeez | Java Portfolio</title>
+  <title>Eye Health & Vision Care | Mubarak Abdulazeez</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- ===== HEADER / NAVIGATION ===== -->
+
+  <!-- Header -->
   <header>
-    <h1>Mubarak Abdulazeez</h1>
+    <h1>Eye Health & Vision Care</h1>
+    <p class="creator">Created by <strong>Mubarak Abdulazeez</strong></p>
+
+    <!-- Navbar -->
     <nav>
-      <a href="#home">Home</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#about">About</a> |
-      <a href="#contact">Contact</a>
-      <button id="modeToggle">DarkMode</button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#conditions">Conditions</a></li>
+        <li><a href="#age">Age-related Issues</a></li>
+        <li><a href="#prevention">Prevention</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <hr>
+
+    <!-- Theme Toggle -->
+    <div class="theme-switch">
+      <input type="checkbox" id="themeToggle" />
+      <label for="themeToggle" class="switch">
+        <span class="sr-only">Toggle dark mode</span>
+        <span class="switch-handle"></span>
+      </label>
+    </div>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home">
-    <h2>Hi, I'm Mubarak 👋</h2>
-    <p>
-      I'm a Software Engineering student passionate about building Java applications and learning modern programming tools.
-    </p>
+  <!-- Hero Section -->
+  <section id="home" class="fade-in">
+    <h2>Your Eyes, Your Vision, Your Health</h2>
+    <p>Learn about common eye conditions, how to prevent them, and protect your vision for life.</p>
   </section>
-  <hr>
 
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section id="projects">
-    <h2>My Java Projects</h2>
+  <!-- Common Eye Conditions -->
+  <section id="conditions" class="fade-in">
+    <h2>Common Eye Conditions</h2>
 
-    <div class="project">
-      <h3>Student Management System</h3>
-      <p>A Java console app to manage students’ records with add, delete, and search functions.</p>
-      <a href="https://github.com/yourgithub/student-management-system" target="_blank">View on GitHub</a>
+    <div class="condition">
+      <h3>Cataract</h3>
+      <img src="Cataract_(28464844371).png.crdownload" alt="Cataract in human eye" class="condition-img">
+      <p>Cataracts cause cloudy vision due to protein build-up in the lens. Prevent with UV protection, nutrition, and regular eye exams.</p>
     </div>
 
-    <div class="project">
-      <h3>ATM Simulator</h3>
-      <p>A simple ATM simulation program allowing withdrawals, deposits, and balance checking.</p>
-      <a href="https://github.com/yourgithub/atm-simulator" target="_blank">View on GitHub</a>
+    <div class="condition">
+      <h3>Glaucoma</h3>
+      <img src="Eye_disease_simulation,_glaucoma.jpg" alt="Glaucoma diagram" class="condition-img">
+      <p>Glaucoma damages the optic nerve from high pressure inside the eye. Early detection is vital to prevent permanent blindness.</p>
     </div>
 
-    <div class="project">
-      <h3>Library Management System</h3>
-      <p>Manages book records, borrowing and returning operations, built using OOP principles.</p>
-      <a href="https://github.com/yourgithub/library-management-system" target="_blank">View on GitHub</a>
+    <div class="condition">
+      <h3>Age-related Macular Degeneration (AMD)</h3>
+      <img src="Intermediate_age_related_macular_degeneration.jpg" alt="Macular degeneration view" class="condition-img">
+      <p>AMD affects central vision. Maintain a healthy diet rich in vitamins C and E, and avoid smoking to reduce risk.</p>
+    </div>
+
+    <div class="condition">
+      <h3>Diabetic Retinopathy</h3>
+      <img src="db591b_2450839c1c60432f84ec31487649b4aa_mv2.webp" alt="Diabetic retinopathy retina" class="condition-img">
+      <p>Caused by damaged retina blood vessels due to diabetes. Control blood sugar and get regular eye check-ups.</p>
     </div>
   </section>
-  <hr>
 
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a dedicated Software Engineering student at Veritas University with a strong interest in backend development and Java programming. 
-      I love solving problems, learning new technologies, and contributing to open-source projects.
-    </p>
-    <p>
-      My goal is to become a top-tier software engineer capable of building efficient, real-world applications.
-    </p>
+  <!-- Age-Related Eye Issues -->
+  <section id="age" class="fade-in">
+    <h2>Age-Related Eye Problems</h2>
+
+    <div class="condition">
+      <h3>Presbyopia</h3>
+      <img src="istockphoto-1279915967-612x612.jpg" alt="Presbyopia reading difficulty" class="condition-img">
+      <p>Difficulty focusing on close objects due to aging. Correct with reading glasses or multifocal lenses.</p>
+    </div>
+
+    <div class="condition">
+      <h3>Dry Eyes</h3>
+      <img src="686c7796e9f87729312f8ef9_eye-827853_960_720.jpeg" alt="Dry eyes closeup" class="condition-img">
+      <p>Decreased tear production leads to irritation. Use artificial tears and stay hydrated.</p>
+    </div>
+
+    <div class="condition">
+      <h3>Floaters</h3>
+      <img src="download.jpg" alt="Floaters in vision" class="condition-img">
+      <p>Small dark shapes drifting in vision. Usually harmless but see a doctor if sudden increase occurs.</p>
+    </div>
   </section>
-  <hr>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:mubarak@gmail.com">mubarak@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+  <!-- Prevention -->
+  <section id="prevention" class="fade-in">
+    <h2>Prevention & Eye Care Tips</h2>
+    <ul>
+      <li>Eat leafy greens, carrots, citrus fruits, and omega-3 rich foods.</li>
+      <li>Wear sunglasses to block harmful UV rays.</li>
+      <li>Limit screen time and follow the 20-20-20 rule.</li>
+      <li>Get regular comprehensive eye exams.</li>
+      <li>Quit smoking and maintain a healthy weight.</li>
+    </ul>
   </section>
-  <hr>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Resources -->
+  <section id="resources" class="fade-in">
+    <h2>Trusted Resources</h2>
+    <ul>
+      <li><a href="https://www.mayoclinic.org" class="resource-link">Mayo Clinic</a></li>
+      <li><a href="https://www.nei.nih.gov" class="resource-link">National Eye Institute (NIH)</a></li>
+      <li><a href="https://www.who.int/health-topics/blindness-and-vision-loss" class="resource-link">World Health Organization (WHO)</a></li>
+      <li><a href="https://www.cdc.gov/visionhealth" class="resource-link">Centers for Disease Control (CDC)</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Have questions or suggestions? Contact Mubarak Abdulazeez via email: <a href="mailto:mubarakabdulazeez@gmail.com">mubarakabdulazeez@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Mubarak Abdulazeez | Built with ❤️ using HTML</p>
+    <p>© <span id="year"></span> Mubarak Abdulazeez. All Rights Reserved.</p>
   </footer>
-  <script src="script.js"></script>
+<style src="style.css"></style>
+  <script src="modify.js"></script>
 </body>
 </html>
-
-
